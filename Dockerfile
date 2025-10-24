@@ -1,7 +1,7 @@
 # Imagen base Odoo 17
 FROM odoo:17
 # (Opcional) módulos propios
-COPY . /mnt/extra-addons
+COPY extra-addons /mnt/extra-addons
 # Puerto HTTP de Odoo
 EXPOSE 8069
 # Puerto por defecto de PostgreSQL
