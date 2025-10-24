@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: odooquests
+    env: docker
+    rootDir: .
