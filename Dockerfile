@@ -1,4 +1,4 @@
- Imagen base Odoo 17
+# Imagen base Odoo 17
 FROM odoo:17
 # (Opcional) módulos propios
 COPY ./extra-addons /mnt/extra-addons
