@@ -6,7 +6,8 @@ Instalación de Odoo en Render
   codigos:
 
   Dockerfile:
-  ` 
+
+  
 //Imagen base Odoo 17
 
 
