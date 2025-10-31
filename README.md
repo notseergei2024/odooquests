@@ -34,7 +34,13 @@ odoo --db_host=$PGHOST --db_port=$PGPORT \
 --db-filter=$PGDATABASE \
 --dev=all"]
 
+Dockerfile end:
 
+Manifest.py
+
+
+
+Manifest.py end
 
 Organiza tu repositorio con la siguiente estructura:
 
