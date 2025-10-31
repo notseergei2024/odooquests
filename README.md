@@ -1,7 +1,79 @@
-# odooquests
+Instalación de Odoo en Render
 
-1. Ordenar las carpetas del repositorio con la estrcutura pedida
-2. Crear una cuenta de render
-3. Elegimos web service
-4. Ponemos la URL de nuestro git hub en el apartado de Public Git repository
-5. Una vez conectado creamos la base de datos
+
+- Fase 1: Preparar el repositorio
+
+Organiza tu repositorio con la siguiente estructura:
+
+(en público o cuenta enlazada)
+
+Extra - addons / Dockerfile(ruta) / read.me 
+
+Extra - addons --> Dummy module ---> Init_.py, manifest_.py (comandos)
+
+Extra - addons --> .gitkeep
+
+
+Asegúrate de incluir un Dockerfile configurado para Odoo y un archivo .env. con las variables necesarias como DB_HOST, DB_NAME, DB_USER, DB_PASSWORD y DB_PORT.
+
+- Fase 2: Crear una cuenta en Render
+
+Accede a https://render.com
+
+Crea una cuenta o inicia sesión con tu cuenta de GitHub
+
+- Fase 3: Crear un servicio web en Render
+
+Dentro del panel selecciona New
+
+Elige Web Service
+
+Render pedirá conectar un repositorio
+
+- Fase 4: Conectar GitHub al servicio
+
+En Public Git Repository ingresa la URL de tu repositorio, en mi caso:
+
+https://github.com/notseergei2024/odooquests/edit/main/README.md
+
+Render reconocerá el repositorio y mostrará configuración automática
+
+Selecciona el tipo Docker
+
+Selecciona la región Frankot
+
+Selecciona el plan Free 
+
+- Fase 5: Crear la base de datos
+
+Odoo requiere PostgreSQL para funcionar.
+
+Pasos recomendados en Render:
+
+Crea una nueva base PostgreSQL desde el panel
+
+Copia las credenciales que te proporciona
+
+Dentro del servicio web en Render configura las variables de entorno
+
+Variables: 
+
+DB_HOST
+
+DB_NAME 
+
+DB_USER
+
+DB_PASSWORD
+
+- Fase 6: Realizar el despliegue
+
+Haz clic en Deploy Web Service
+
+Render comenzará a construir e iniciar Odoo
+
+La primera vez puede tardar algunos minutos
+
+Al finalizar tendrás una URL como:
+https://tu-app-odoo.onrender.com
+
